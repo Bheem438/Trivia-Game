@@ -23,6 +23,7 @@ function App() {
   function callback() {
     setTimeout(() => {
       axios.get("https://jservice.io/api/random").then((response) => {
+        console.log(response)
         setquestions(response.data[0].question);
         setAnswer(response.data[0].answer);
       });
