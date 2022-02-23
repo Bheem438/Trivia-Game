@@ -33,7 +33,7 @@ function App() {
     if (inputValue.length <= 3) {
       setIsInput(true);
     } else {
-      if (inputValue == answer) {
+      if (inputValue === answer) {
         setExact(true);
       } else {
         setExact(false);
