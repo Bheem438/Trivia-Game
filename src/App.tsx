@@ -58,7 +58,7 @@ function App() {
         value={inputValue}
         onChange={(e) => {
           setInputValue(e.target.value);
-        }}
+        }} required
       />
       <button className="btn" onClick={clickHandler}></button>
       <br />
